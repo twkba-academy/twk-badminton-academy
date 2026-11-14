@@ -31,3 +31,31 @@ option{background:#1c2028}
 @media(max-width:1150px){.course-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.hero-shade{background:linear-gradient(90deg,#111318eb,#11131866),linear-gradient(0deg,#111318,transparent 65%)}}
 @media(max-width:600px){.course-grid,.coach-grid{grid-template-columns:1fr}}
+
+/* International exchange journal */
+.exchange-highlights{background:#0b0d11;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.exchange-highlights-heading{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:end;margin-bottom:76px}
+.exchange-highlights-heading h2{margin-bottom:0}
+.exchange-highlights-heading p{margin:0 0 10px}
+.exchange-year-block{display:grid;grid-template-columns:150px 1fr;border-top:1px solid var(--line);padding:46px 0 70px}
+.exchange-year{font-family:'Barlow Condensed','Noto Sans SC',sans-serif;font-size:3.6rem;font-weight:800;line-height:1;color:var(--yellow);position:relative}
+.exchange-year span{position:sticky;top:125px}
+.exchange-events{display:grid;gap:70px}
+.exchange-event{min-width:0}
+.exchange-event+.exchange-event{border-top:1px solid var(--line);padding-top:70px}
+.exchange-event-copy{display:grid;grid-template-columns:minmax(180px,.65fr) 1.25fr;column-gap:36px;align-items:start;margin-bottom:28px}
+.exchange-event-copy .event-type{grid-row:1/3;color:var(--yellow);font-size:.78rem;font-weight:700;letter-spacing:.13em;line-height:1.5}
+.exchange-event-copy h3{font-size:clamp(2rem,3.5vw,3.5rem);margin:0 0 14px}
+.exchange-event-copy p{margin:0}
+.exchange-gallery{margin:0;display:grid;gap:12px;overflow:hidden}
+.exchange-gallery img{width:100%;height:100%;min-height:0;object-fit:cover;background:#151922}
+.exchange-gallery-single{aspect-ratio:16/7}
+.exchange-gallery-two{grid-template-columns:repeat(2,1fr)}
+.exchange-gallery-two.landscape{aspect-ratio:16/6.4}
+.exchange-gallery-two.portrait{aspect-ratio:16/9}
+.exchange-gallery-two.portrait img{object-position:center 32%}
+.exchange-gallery-three{grid-template-columns:1.25fr .85fr .85fr;aspect-ratio:16/7}
+.exchange-gallery-three img:first-child{object-position:center 55%}
+.exchange-year-undated{padding-bottom:0}
+@media(max-width:900px){.exchange-highlights-heading{grid-template-columns:1fr;gap:20px;margin-bottom:55px}.exchange-year-block{grid-template-columns:110px 1fr}.exchange-event-copy{grid-template-columns:1fr}.exchange-event-copy .event-type{grid-row:auto;margin-bottom:13px}.exchange-gallery-three{grid-template-columns:1fr 1fr;aspect-ratio:auto}.exchange-gallery-three img{aspect-ratio:4/3}.exchange-gallery-three img:first-child{grid-column:1/-1;aspect-ratio:16/9}}
+@media(max-width:600px){.exchange-year-block{display:block;padding:34px 0 52px}.exchange-year{font-size:2.7rem;margin-bottom:30px}.exchange-year span{position:static}.exchange-events{gap:48px}.exchange-event+.exchange-event{padding-top:48px}.exchange-event-copy{margin-bottom:20px}.exchange-event-copy h3{font-size:2.15rem}.exchange-gallery-single,.exchange-gallery-two.landscape,.exchange-gallery-two.portrait{aspect-ratio:auto}.exchange-gallery-two{grid-template-columns:1fr}.exchange-gallery-two img{aspect-ratio:4/3}.exchange-gallery-two.portrait img{aspect-ratio:3/4}.exchange-gallery-three{grid-template-columns:1fr}.exchange-gallery-three img,.exchange-gallery-three img:first-child{grid-column:auto;aspect-ratio:4/3}.exchange-highlights-heading{margin-bottom:42px}}
